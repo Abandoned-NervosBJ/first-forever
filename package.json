@@ -1,0 +1,39 @@
+{
+  "name": "first-forever",
+  "version": "0.0.1",
+  "description": "first forever",
+  "main": "index.js",
+  "dependencies": {
+    "@nervos/chain": "^0.19.0",
+    "@nervos/web3": "^0.17.41",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --runInBand",
+    "eject": "react-scripts eject",
+    "deploy": "node ./src/contracts/deploy.js",
+    "test:contract": "node ./src/contracts/contracts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NervosBeijingCommunity/first-forever.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NervosBeijingCommunity/first-forever/issues"
+  },
+  "homepage": "https://github.com/NervosBeijingCommunity/first-forever#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
