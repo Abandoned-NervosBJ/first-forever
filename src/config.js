@@ -1,6 +1,7 @@
 const config = {
-  chain: 'http://localhost:1337',
-  privateKey: '0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff',
-  contractAddress: ''
+  chain: 'http://121.196.200.225:1337',
+  contractAddress: '0x3D91cafAe0460D9cA810bbD03aac89e10A613703',
+  privateKey:'0x452afbe580c3680feaf64adc2755d88c7c796d3e622d4f2645557c09a00623f7',
 }
+
 module.exports = config
