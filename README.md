@@ -28,6 +28,12 @@ yarn add react-scripts
 ```
 
 ### 生成测试地址
+
+1 访问服务获得地址
+ https://service-exvd0ctl-1258120565.ap-beijing.apigateway.myqcloud.com/release/addr
+
+2 使用js代码生成地址
+
 创建 index.js 文件，里面写一个 nodejs 脚本。commonjs 模块语法导入 nervos 对象。通过 accounts.create() 接口就可以来创建账户了。
 
 ```
