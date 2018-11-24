@@ -16,6 +16,7 @@ Mac系统:
 ### 过程
 
 ```
+mkdir first-forever
 npm init -y # 生成package.json
 yarn add @nervos/chain
 yarn add @nervos/web3
