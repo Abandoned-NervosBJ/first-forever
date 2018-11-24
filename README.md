@@ -28,11 +28,22 @@ yarn add react-scripts
 ```
 
 ### 生成测试地址
+创建 index.js 文件，里面写一个 nodejs 脚本。commonjs 模块语法导入 nervos 对象。通过 accounts.create() 接口就可以来创建账户了。
 
 ```
 const Nervos = require('@nervos/chain').default
 const nervos = Nervos()
 console.log(nervos.appchain.accounts.create())
+```
+
+运行命令：`node index.js` 会生成你的账户：
+```
+{ address: '0xlongstring',
+  privateKey:
+   '0xlonglongstring',
+  signTransaction: [Function: signTransaction],
+  sign: [Function: sign],
+  encrypt: [Function: encrypt] }
 ```
 
 ### 水龙头获取测试币
