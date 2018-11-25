@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@appchain/base@^0.20.2":
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/@appchain/base/-/base-0.20.2.tgz#23f7dc8427d97df078421de9d52f2944fc02b8e4"
+  dependencies:
+    "@appchain/signer" "^2.0.3"
+    web3 "^1.0.0-beta.34"
+
+"@appchain/signer@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@appchain/signer/-/signer-2.0.3.tgz#146b5966a4e5e5b297abca508e7ab45ce1e7ad44"
+  dependencies:
+    ec "^0.0.1"
+    elliptic "^6.4.0"
+    google-protobuf "^3.5.0"
+    web3 "^1.0.0-beta.34"
+
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
@@ -744,14 +760,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nervos/chain@^0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@nervos/chain/-/chain-0.19.0.tgz#2b90b5cc07d6fe1873d0a218b50a0e136ebb4a62"
-  dependencies:
-    "@nervos/signer" "^1.0.38"
-    web3 "^1.0.0-beta.34"
-
-"@nervos/signer@^1.0.28", "@nervos/signer@^1.0.38":
+"@nervos/signer@^1.0.28":
   version "1.0.38"
   resolved "https://registry.yarnpkg.com/@nervos/signer/-/signer-1.0.38.tgz#1552d80d677a52e8c2de3f79499bcb73c88bb1a0"
   dependencies:

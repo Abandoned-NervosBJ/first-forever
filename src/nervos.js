@@ -1,12 +1,12 @@
 const {
   default: Nervos
-} = require('@nervos/chain')
+} = require('@appchain/base')
 
 const config = require('./config')
 
 const nervos = Nervos(config.chain) // config.chain indicates that the address of Appchain to interact
-const account = nervos.appchain.accounts.privateKeyToAccount(config.privateKey) // create account by private key from config
+const account = nervos.base.accounts.privateKeyToAccount(config.privateKey) //create account by private key from config
 
-nervos.appchain.accounts.wallet.add(account) // add account to nervos
+nervos.base.accounts.wallet.add(account)
 
 module.exports = nervos
