@@ -36,8 +36,8 @@ class Show extends React.Component {
     return (
       <div className="show__container">
         <span className="show__time">{_time.toLocaleString()}</span>
-        <img src="https://picsum.photos/200/100?random" alt="rand_img" className="show__photo" />
         <div className="show__text">{text}</div>
+        <img src="https://picsum.photos/200/100?random" alt="rand_img" className="show__photo" />
         <BottomNav active={'list'} />
       </div>
     )
