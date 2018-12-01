@@ -62,7 +62,7 @@ class Add extends React.Component {
         <div className="add__time--container">
           <span className="add__time--year">{time.getFullYear()}</span>
           :
-          <span className="add__time--month">{timeFormatter((time.getMonth() + 1) % 12)}</span>
+          <span className="add__time--month">{time.getMonth()+1}</span>
           :
           <span className="add__time--day">{timeFormatter(time.getDate())}</span>
           :
