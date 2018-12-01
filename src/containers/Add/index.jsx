@@ -25,7 +25,7 @@ class Add extends React.Component {
   }
   handleSubmit = e => {
     const { time, text } = this.state
-    nervos.appchain
+    nervos.base
       .getBlockNumber()
       .then(current => {
         const tx = {

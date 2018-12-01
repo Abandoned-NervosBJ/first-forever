@@ -3,9 +3,9 @@ const { abi } = require('./compiled')
 const { contractAddress } = require('../config')
 const transaction = require('./transaction')
 
-const simpleStoreContract = new nervos.appchain.Contract(abi, contractAddress) // instantiate contract
+const simpleStoreContract = new nervos.base.Contract(abi, contractAddress) // instantiate contract
 
-nervos.appchain.getBalance(nervos.appchain.accounts.wallet[0].address).then(console.log) // check balance of account
+nervos.base.getBalance(nervos.base.accounts.wallet[0].address).then(console.log) // check balance of account
 console.log(`Interact with contract at ${contractAddress}`)
 const time = new Date().getTime()
 const text = 'hello world at ' + time
@@ -13,7 +13,7 @@ const text = 'hello world at ' + time
 test(
   `Add record of (${text}, ${time})`,
   async () => {
-    const current = await nervos.appchain.getBlockNumber()
+    const current = await nervos.base.getBlockNumber()
     transaction.validUntilBlock = +current + 88 // update transaction.validUntilBlock
     const txResult = await simpleStoreContract.methods.add(text, time).send(transaction) // sendTransaction to the contract
     const receipt = await nervos.listeners.listenToTransactionReceipt(txResult.hash) // listen to the receipt

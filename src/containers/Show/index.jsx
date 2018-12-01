@@ -17,7 +17,7 @@ class Show extends React.Component {
       simpleStoreContract.methods
         .get(time)
         .call({
-          from: nervos.appchain.accounts.wallet[0].address,
+          from: nervos.base.accounts.wallet[0].address,
         })
         .then(text => {
           this.setState({ time, text })
