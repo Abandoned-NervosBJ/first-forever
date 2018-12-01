@@ -1,3 +1,3 @@
-const Nervos = require('@nervos/chain').default
+const Nervos = require('@appchain/base').default
 const nervos = Nervos()
-console.log(nervos.appchain.accounts.create())
+console.log(nervos.base.accounts.create())
