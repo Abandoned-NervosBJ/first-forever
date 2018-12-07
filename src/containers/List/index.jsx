@@ -6,11 +6,13 @@ import nervos from '../../nervos'
 require('./list.css')
 
 const Record = ({ time, text, hasYearLabel }) => {
-  const _time = new Date(+time)
+  const _time = new Date(+time);
+  const timeFormatter = time => ('' + time).padStart(2, '0');
+
   return (
     <div className="list__record--container">
       {hasYearLabel ? <div className="list__record--year">{_time.getFullYear()}</div> : null}
-      <span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>
+      <span>{`${_time.getMonth() + 1}-${timeFormatter(_time.getDate())} ${timeFormatter(_time.getHours())}:${timeFormatter(_time.getMinutes())}`}</span>
       <Link to={`/show/${time}`}>
         <div>{text}</div>
       </Link>
